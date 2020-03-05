@@ -1,4 +1,9 @@
-<?php include 'functions.php'; ?>
+<?php include 'functions.php'; 
+
+if (empty($_SESSION['name'])) {
+    header('location: login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
